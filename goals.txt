@@ -1,0 +1,3 @@
+Media Query Mobile First w/ burger menu
+Mobile: 1 column layout
+Desktop: 3 column

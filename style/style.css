@@ -1,0 +1,134 @@
+/* vv DEBUG BORDERS vv */
+/* div, header, nav, main, footer, .debug{
+    border: 2px dashed orange;
+} */
+
+:root {
+    --cubeHeight: 75px;
+    /* --cubeWidth: 50px; */
+  }
+
+
+/* CUBE STYLE */
+
+#cube {
+    padding-top: 20px;
+
+    position: relative;
+    width: var(--cubeHeight);
+    height: var(--cubeHeight);
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-45deg);
+    transition: transform 0.1s;
+}
+
+.face {
+    position: absolute;
+    width: var(--cubeHeight);
+    height: var(--cubeHeight);
+    background: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid #ccc; */
+
+    background-size: cover;
+        
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.front  { transform: translateZ(calc(var(--cubeHeight)/2)); 
+    background-image: url("../images/steve-head/face.png");
+}
+.back   { transform: rotateY(180deg) translateZ(calc(var(--cubeHeight)/2)); 
+    background-image: url("../images/steve-head/back.png");
+}
+.left   { transform: rotateY(-90deg) translateZ(calc(var(--cubeHeight)/2)); 
+    background-image: url("../images/steve-head/right.png");
+}
+.right  { transform: rotateY(90deg) translateZ(calc(var(--cubeHeight)/2)); 
+    background-image: url("../images/steve-head/left.png");
+}
+.top    { transform: rotateX(90deg) translateZ(calc(var(--cubeHeight)/2)); 
+    background-image: url("../images/steve-head/top.png");
+}
+.bottom { transform: rotateX(-90deg) translateZ(calc(var(--cubeHeight)/2)); 
+    background-image: url("../images/steve-head/bottom.png");
+}
+
+/* ^^^ cube test */
+
+/* MENU TEST "_" */
+
+.wrapper-semi-circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.margin-centered {
+    margin: 0 auto 0 auto;
+}
+
+.menu-semi-circle {
+    background-color: blueviolet;
+    max-width: 300px;
+    min-width: 300px;
+    height: 150px;
+
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-body {
+    background-color: blueviolet;
+    max-width: 800px;
+    height: 800px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* ^^^ Menu test ;_; */
+
+a {
+    text-decoration: none;
+    color: red;
+}
+a:visited {
+    color: red;
+}
+
+.wrapper-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+#logo {
+    /* flex-basis: 100%; */
+}
+#logo img{
+    width: 45px;
+}
+#title {
+    margin: 0 auto 0 auto;
+    align-self: center;
+    font-size: 1.3em;
+
+    font-family: "Comic Sans MS", "Comic Sans", serif;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.dropdown {
+    flex-direction: column;
+}
+nav li {
+
+}
