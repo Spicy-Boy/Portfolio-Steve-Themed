@@ -37,22 +37,27 @@
 }
 
 .front  { transform: translateZ(calc(var(--cubeHeight)/2)); 
-    background-image: url("../images/steve-head/face.png");
+    background-image: url("./images/steve-head/face.png");
 }
 .back   { transform: rotateY(180deg) translateZ(calc(var(--cubeHeight)/2)); 
-    background-image: url("../images/steve-head/back.png");
+    background-image: url("./images/steve-head/back.png");
 }
 .left   { transform: rotateY(-90deg) translateZ(calc(var(--cubeHeight)/2)); 
-    background-image: url("../images/steve-head/right.png");
+    background-image: url("./images/steve-head/right.png");
 }
 .right  { transform: rotateY(90deg) translateZ(calc(var(--cubeHeight)/2)); 
-    background-image: url("../images/steve-head/left.png");
+    background-image: url("./images/steve-head/left.png");
 }
 .top    { transform: rotateX(90deg) translateZ(calc(var(--cubeHeight)/2)); 
-    background-image: url("../images/steve-head/top.png");
+    background-image: url("./images/steve-head/top.png");
 }
 .bottom { transform: rotateX(-90deg) translateZ(calc(var(--cubeHeight)/2)); 
-    background-image: url("../images/steve-head/bottom.png");
+    background-image: url("./images/steve-head/bottom.png");
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
 }
 
 /* ^^^ cube test */
@@ -85,19 +90,28 @@
 .menu-body {
     background-color: blueviolet;
     max-width: 800px;
-    height: 800px;
+    height: 300px;
 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    text-align: center;
 }
 
 /* ^^^ Menu test ;_; */
 
-a {
+/* a {
     text-decoration: none;
     color: red;
 }
 a:visited {
+    color: red;
+} */
+
+a:hover {
     color: red;
 }
 
@@ -129,28 +143,6 @@ nav ul {
 .dropdown {
     flex-direction: column;
 }
-/* nav li {
+nav li {
 
-} */
-
-/* RESUME STYLE */
-.resume-body {
-    background-color: grey;
-}
-.resume-wrapper {
-    margin: 0 auto 0 auto;
-    max-width: 1000px;
-    background-color: white;
-
-    padding: 15px;
-    justify-content: center;
-}
-
-.resume-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.resume-half-col {
-    flex-basis: 50%;
 }
